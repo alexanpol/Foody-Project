@@ -3,12 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecipeFragment">
+    tools:context=".ui.fragments.recipesFragment.RecipeFragment">
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="@string/Recipes" />-->
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.facebook.shimmer.ShimmerFrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/Recipes" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+            <include layout="@layout/recipe_row_layout_shimmer"/>
+        </LinearLayout>
+
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
 
 </FrameLayout>
